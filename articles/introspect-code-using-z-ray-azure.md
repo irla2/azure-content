@@ -89,7 +89,7 @@ Cool, you’ve got your code running on Azure. Now, how do we get Z-Ray working?
 
 3. In the Develop section, select **Zend Z-Ray**, and then **Enable Z-Ray for Azure**.
 
-   ![Z-Ray displayed on the uploaded application][10]
+   ![Z-Ray displayed on the uploaded application][8]
 
 4. Select your pricing tier, and click **Select**.
 5. Last but not least, review the licensing info, and click **Purchase**.
@@ -97,7 +97,7 @@ After a short while you'll get a notification informing you that Z-Ray was succe
 
 Well done! To start working with Z-Ray, simply refresh your web app in the browser. Z-Ray is displayed at the bottom of the page with all the info you need on your app right in front of you.
 
-   ![Z-Ray displayed on the uploaded application][8]
+   ![Z-Ray displayed on the uploaded application][10]
 
 ##Summary
 So, in just a few minutes, we created a new Azure web app, uploaded our code, and began using Z-Ray.
@@ -107,9 +107,10 @@ Using Z-Ray on Azure revolutionizes the way you develop PHP on the cloud. The co
 <!--Every topic should have next steps and links to the next logical set of content to keep the customer engaged-->
 ## What Next?
 
-You've got Z-Ray working on your web app. What now? To learn how to use Z-Ray and more about its various features, take a look at the [Online Help](http://files.zend.com/help/Z-Ray-Azure/Content/home.htm)
-One of the more exciting features about Z-Ray is the ability to extend it to show any info you want using extension API. These extensions of Z-Ray are called plugins, and they can be shared with other Z-Ray users using the Zend Gallery. To learn more about the Zend Gallery and available plugins, visit [Zend.com](http://www.zend.com/en/products/server/plugins)
-If you'd like to extend Z-Ray to show info on your app, visit the extension API docuemntation on [GitHub](https://github.com/zend-server-plugins/Documentation).
+You've got Z-Ray working on your web app. What now? 
+   - To learn how to use Z-Ray and more about its various features, take a look at the [Online Help](http://files.zend.com/help/Z-Ray-Azure/Content/home.htm)
+   - One of the more exciting features about Z-Ray is the ability to extend it to show any info you want using extension API. These extensions of Z-Ray are called plugins, and they can be shared with other Z-Ray users using the Zend Gallery. To learn more about the Zend Gallery and available plugins, visit [Zend.com](http://www.zend.com/en/products/server/plugins)
+   - If you'd like to extend Z-Ray to show info on your app, visit the extension API docuemntation on [GitHub](https://github.com/zend-server-plugins/Documentation).
 
 <!--Image references-->
 [1]: http://devzone.zend.com/wp-content/uploads/2015/06/web_app_blade.jpg
