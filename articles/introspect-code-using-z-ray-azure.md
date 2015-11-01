@@ -52,6 +52,7 @@ Once created, the web app blade opens and you get a notification that your deplo
    ![Alt text; do not leave blank. Collector car in racing red.][5]
 
 Clicking Browse at the top of the blade opens our web app with a default page displayed.
+
   	![Alt text; do not leave blank][6]
 
 ## Step 2 : Uploading your Code
@@ -62,40 +63,51 @@ To do this we’re going to access the web app’s Kudo. Kudo is a diagnostic co
 
 1. Access your web app’s Kudo by adding 'scm' to your web app's URL as follows:
 *http://<webappname>.scm.asurewebsites.net*
+2. In the Kudo console, go to **Debug console | CMD**.
 
+   ![Alt text; do not leave blank][6]
 
-2. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.
+3. Browse to **site | wwwroot**.
+4. Drag and drop a .zip file containing your code onto the right side of the screen above the CMD window.
+[AZURE.NOTE] In this article, I'm uploading the Zend Framework 2 skeleton application but of course you can uplaod any code you want.
 
-   	    // Because toast alerts don't work when the app is running, the app handles them.
-        // This uses the userInfo in the payload to display a UIAlertView.
-        - (void)application:(UIApplication *)application didReceiveRemoteNotification:
-        (NSDictionary *)userInfo {
-            NSLog(@"%@", userInfo);
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Notification" message:
-            [userInfo objectForKey:@"inAppMessage"] delegate:nil cancelButtonTitle:
-            @"OK" otherButtonTitles:nil, nil];
-            [alert show];
-        }
+5. After Azure finished to upload your code, remove the existing 'hostingstart.html' file.
 
+6. Open your app in a browser. Make sure to enter the correct path to the opening app file.
+**Example:** *https://danieldemo.azurewebsites.net/zf2skeleton/public/*
 
-    > [AZURE.NOTE] Duis sed diam non <i>nisl molestie</i> pharetra eget a est. [Link 2 to another azure.microsoft.com documentation topic](web-sites-custom-domain-name.md)
+   ![Alt text; do not leave blank][6]
+   
+## Step 3 : Enabling Z-Ray
+Cool, you’ve got your code running on Azure. Now, how do we get Z-Ray working?
 
+1. Open your web app blade.
+2. Open the Tools menu. To do this, click the Tools icon at the top of the blade.
 
-Quisque commodo eros vel lectus euismod auctor eget sit amet leo. Proin faucibus suscipit tellus dignissim ultrices.
+   ![Alt text; do not leave blank. Example of a Channel 9 video.][7]
 
-## Heading 2 (H2)
-
-1. Maecenas sed condimentum nisi. Suspendisse potenti.
-
-  + Fusce
-  + Malesuada
-  + Sem
-
-2. Nullam in massa eu tellus tempus hendrerit.
+3. In the Develop section, select **Zend Z-Ray**, and then **Enable Z-Ray for Azure**.
 
   	![Alt text; do not leave blank. Example of a Channel 9 video.][7]
 
-3. Quisque felis enim, fermentum ut aliquam nec, pellentesque pulvinar magna.
+4. Select your pricing tier, and click **Select**.
+5. Last but not least, review the licensing info, and click **Purchase**.
+After a short while you'll get a notification informing you that Z-Ray was successfully enabled. This means that Z-Ray is now enabled for your web app!
+
+Well done! To start working with Z-Ray, simply refresh your web app in the browser. Z-Ray is displayed at the bottom of the page with all the info you need on your app right in front of you.
+
+   ![Alt text; do not leave blank. Example of a Channel 9 video.][7]
+
+##Summary
+So, in just a few minutes, we created a new Azure web app, uploaded our code, and began using Z-Ray.
+
+Using Z-Ray on Azure revolutionizes the way you develop PHP on the cloud. The combination of Z-Ray and Azure means you can use Z-Ray to introspect any code you have deployed on an Azure web app, thus enabling you to enjoy the best of the two worlds - Azure's web app services and Z-Ray's powerful introspection capabilities.
+
+We would love to receive your feedback so we can make this service even better. To provide your input, please fill this form.
+
+For more information on how to work with Z-Ray on Azure, you can visit the online help at: http://files.zend.com/help/Z-Ray-Azure/Content/home.htm
+
+Thanks and happy PHPing!
 
 
 
