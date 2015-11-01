@@ -62,9 +62,12 @@ To do this we’re going to access the web app’s Kudo. Kudo is a diagnostic co
 *http://<webappname>.scm.asurewebsites.net*
 2. In the Kudo console, go to **Debug console | CMD**.
 
-   ![Alt text; do not leave blank][4]
+   ![Kudo console][4]
 
 3. Browse to **site | wwwroot**.
+
+   ![Kudo console][5]
+
 4. Drag and drop a .zip file containing your code onto the right side of the screen above the CMD window.
 
    In this article, I'm uploading the Zend Framework 2 skeleton application but of course you can uplaod any code you want.
@@ -74,7 +77,7 @@ To do this we’re going to access the web app’s Kudo. Kudo is a diagnostic co
 6. Open your app in a browser. Make sure to enter the correct path to the opening app file.
 Example:*https://danieldemo.azurewebsites.net/zf2skeleton/public/*
 
-   ![Alt text; do not leave blank][5]
+   ![App open in browser][6]
    
 ## Step 3 : Enabling Z-Ray
 Cool, you’ve got your code running on Azure. Now, how do we get Z-Ray working?
@@ -82,11 +85,11 @@ Cool, you’ve got your code running on Azure. Now, how do we get Z-Ray working?
 1. Open your web app blade.
 2. Open the Tools menu. To do this, click the Tools icon at the top of the blade.
 
-   ![Alt text; do not leave blank. Example of a Channel 9 video.][6]
+   	![Enabling Z-Ray on Azure][7]
 
 3. In the Develop section, select **Zend Z-Ray**, and then **Enable Z-Ray for Azure**.
 
-  	![Alt text; do not leave blank. Example of a Channel 9 video.][7]
+   ![Z-Ray displayed on the uploaded application][10]
 
 4. Select your pricing tier, and click **Select**.
 5. Last but not least, review the licensing info, and click **Purchase**.
@@ -94,7 +97,7 @@ After a short while you'll get a notification informing you that Z-Ray was succe
 
 Well done! To start working with Z-Ray, simply refresh your web app in the browser. Z-Ray is displayed at the bottom of the page with all the info you need on your app right in front of you.
 
-   ![Alt text; do not leave blank. Example of a Channel 9 video.][8]
+   ![Z-Ray displayed on the uploaded application][8]
 
 ##Summary
 So, in just a few minutes, we created a new Azure web app, uploaded our code, and began using Z-Ray.
@@ -117,3 +120,4 @@ If you'd like to extend Z-Ray to show info on your app, visit the extension API 
 [6]: http://devzone.zend.com/wp-content/uploads/2015/06/code_uploaded2.jpg
 [7]: http://devzone.zend.com/wp-content/uploads/2015/08/tools_icon1.jpg
 [8]: http://devzone.zend.com/wp-content/uploads/2015/08/pricing_tiers.jpg
+[10]: http://devzone.zend.com/wp-content/uploads/2015/06/z-ray-enabled2.jpg
