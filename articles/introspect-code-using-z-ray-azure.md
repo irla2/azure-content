@@ -26,7 +26,7 @@ To follow the steps outline here, all you need is a Microsoft Azure account, som
 
 Let’s get this show on the road!
 
-  ![Alt text; do not leave blank. Describe image.][8]
+  ![Web App blade][1]
 
 ## Step 1 : Creating an Azure Web App
 
@@ -103,22 +103,15 @@ So, in just a few minutes, we created a new Azure web app, uploaded our code, an
 
 Using Z-Ray on Azure revolutionizes the way you develop PHP on the cloud. The combination of Z-Ray and Azure means you can use Z-Ray to introspect any code you have deployed on an Azure web app, thus enabling you to enjoy the best of the two worlds - Azure's web app services and Z-Ray's powerful introspection capabilities.
 
-We would love to receive your feedback so we can make this service even better. To provide your input, please fill this form.
-
-For more information on how to work with Z-Ray on Azure, you can visit the online help at: http://files.zend.com/help/Z-Ray-Azure/Content/home.htm
-
-Thanks and happy PHPing!
-
-
-
-
 <!--Every topic should have next steps and links to the next logical set of content to keep the customer engaged-->
-## Next steps
+## What Next?
 
-Vestibul ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ultricies, ipsum vitae volutpat hendrerit, purus diam pretium eros, vitae tincidunt nulla lorem sed turpis: [Link 3 to another azure.microsoft.com documentation topic](storage-whatis-account.md).
+You've got Z-Ray working on your web app. What now? To learn how to use Z-Ray and more about its various features, take a look at the [Online Help](http://files.zend.com/help/Z-Ray-Azure/Content/home.htm)
+One of the more exciting features about Z-Ray is the ability to extend it to show any info you want using extension API. These extensions of Z-Ray are called plugins, and they can be shared with other Z-Ray users using the Zend Gallery. To learn more about the Zend Gallery and available plugins, visit [Zend.com](http://www.zend.com/en/products/server/plugins)
+If you'd like to extend Z-Ray to show info on your app, visit the extension API docuemntation on [GitHub](https://github.com/zend-server-plugins/Documentation).
 
 <!--Image references-->
-[5]: ./media/markdown-template-for-new-articles/octocats.png
+[1]: http://devzone.zend.com/wp-content/uploads/2015/06/web_app_blade.jpg
 [6]: ./media/markdown-template-for-new-articles/pretty49.png
 [7]: ./media/markdown-template-for-new-articles/channel-9.png
 [8]: ./media/markdown-template-for-new-articles/copytemplate.png
