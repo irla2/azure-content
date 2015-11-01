@@ -42,16 +42,13 @@ Your first step is to create a new web app on Azure. An Azure web app is basical
    - Resource Group - select an existing resource group or create a new one
    - App Service Plan - select an app service plan, or create a new one. A service plan is basically the container that holds your app, with settings that determine the location, costs and resources associated with it.
    
-5. Click **Create**.
-Your new web app is pinned to the Startboard, and will take a few minutes to be created.
-
-Once created, the web app blade opens and you get a notification that your deployment succeeded!
+5. Click **Create**. Your new web app is pinned to the Startboard, and will take a few minutes to be created. Once created, the web app blade opens and you get a notification that your deployment succeeded!
 
    ![New Web App created][2]
 
 Clicking Browse at the top of the blade opens our web app with a default page displayed.
 
-  	![Alt text; do not leave blank][3]
+  	![New empty Web App open in browser][3]
 
 ## Step 2 : Uploading your Code
 
