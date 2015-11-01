@@ -50,7 +50,7 @@ Once created, the web app blade opens and you get a notification that your deplo
 
 Clicking **Browse** at the top of the blade opens our web app with a default page displayed.
 
-  	![New empty Web App open in browser][9]
+   ![New empty Web App open in browser][9]
 
 ## Step 2 : Uploading your Code
 
@@ -66,12 +66,13 @@ To do this we’re going to access the web app’s Kudo. Kudo is a diagnostic co
 
 3. Browse to **site | wwwroot**.
 4. Drag and drop a .zip file containing your code onto the right side of the screen above the CMD window.
-[AZURE.NOTE] In this article, I'm uploading the Zend Framework 2 skeleton application but of course you can uplaod any code you want.
 
-5. After Azure finished to upload your code, remove the existing 'hostingstart.html' file.
+   In this article, I'm uploading the Zend Framework 2 skeleton application but of course you can uplaod any code you want.
+
+5. After Azure finishes to upload your code, remove the existing 'hostingstart.html' file.
 
 6. Open your app in a browser. Make sure to enter the correct path to the opening app file.
-**Example:** *https://danieldemo.azurewebsites.net/zf2skeleton/public/*
+Example:*https://danieldemo.azurewebsites.net/zf2skeleton/public/*
 
    ![Alt text; do not leave blank][5]
    
