@@ -1,64 +1,68 @@
 <properties
-   pageTitle="Page title that displays in the browser tab and search results"
-   description="Article description that will be displayed on landing pages and in most search results"
-   services="service-name"
+   pageTitle="Introspecting your Code Using Z-Ray on Azure"
+   description="Describes how to use Zend's Z-Ray on Azure to debug and profile PHP applications deployed on Azure web app service."
+   services="Z-Ray on Azure"
    documentationCenter="dev-center-name"
-   authors="GitHub-alias-of-only-one-author"
+   authors="DanielBerman"
    manager="manager-alias"
    editor=""/>
 
 <tags
-   ms.service="required"
-   ms.devlang="may be required"
+   ms.service="Z-Ray on Azure"
+   ms.devlang="PHP"
    ms.topic="article"
    ms.tgt_pltfrm="may be required"
    ms.workload="required"
    ms.date="mm/dd/yyyy"
-   ms.author="Your MSFT alias or your full email address;semicolon separates two or more"/>
+   ms.author="daniel.be@zend.com;@proudboffin"/>
 
-# Markdown template (article Heading 1 or H1): Heading at the top of the article
+# Introspecting your Code Using Z-Ray on Azure
 
-To copy the markdown from this template, copy the article in your local repo, or click the Raw button in the GitHub UI and copy the markdown.
+So you’ve heard about Z-Ray, and you know that it’s now available for Azure web apps. How do you get it working on your code?
+
+This tutorial will walk you through the entire process for getting Z-Ray to work on your code on Azure. You’ll learn how to create a new web app on Azure, upload your code, enable Z-Ray and start using it to introspect your code.
+
+To follow the steps outline here, all you need is a Microsoft Azure account, some working code, and 5 minutes of your time.
+
+Let’s get this show on the road!
 
   ![Alt text; do not leave blank. Describe image.][8]
 
-Intro paragraph: Lorem dolor amet, adipiscing elit. Phasellus interdum nulla risus, lacinia porta nisl imperdiet sed. Mauris dolor mauris, tempus sed lacinia nec, euismod non felis. Nunc semper porta ultrices. Maecenas neque nulla, condimentum vitae ipsum sit amet, dignissim aliquet nisi.
+## Step 1 : Creating an Azure Web App
 
-## Heading 2 (H2)
+Your first step is to create a new web app on Azure. An Azure web app is basically a container that holds all your application code and configurations on the cloud.
 
-Aenean sit amet leo nec purus placerat fermentum ac gravida odio. Aenean tellus lectus, faucibus in rhoncus in, faucibus sed urna.  volutpat mi id purus ultrices iaculis nec non neque. [Link text for link outside of azure.microsoft.com](http://weblogs.asp.net/scottgu). Nullam dictum dolor at aliquam pharetra. Vivamus ac hendrerit mauris [example link text for link to an article in a service folder](../articles/expressroute/expressroute-bandwidth-upgrade.md).
-
-I get 10 times more traffic from [Google] [gog] than from [Yahoo] [yah] or [MSN] [msn].
-
-> [AZURE.NOTE] Indented note text.  The word 'note' will be added during publication. Ut eu pretium lacus. Nullam purus est, iaculis sed est vel, euismod vehicula odio. Curabitur lacinia, erat tristique iaculis rutrum, erat sem sodales nisi, eu condimentum turpis nisi a purus.
-
-1. Aenean sit amet leo nec **Purus** placerat fermentum ac gravida odio.
-
-2. Aenean tellus lectus, faucius in **Rhoncus** in, faucibus sed urna. Suspendisse volutpat mi id purus ultrices iaculis nec non neque.
+1. Log into the [Azure portal](https://portal.azure.com).
+2. In the top-left corner if the portal, click the New button.
+3. In the Create blade, select Web + Mobile, and then Web App.
 
   	![Alt text; do not leave blank. Collector car in racing red.][5]
 
-3. Nullam dictum dolor at aliquam pharetra. Vivamus ac hendrerit mauris. Sed dolor dui, condimentum et varius a, vehicula at nisl.
+4. In the Web App blade, configure your web app settings:
+   - URL - enter the URL of your website
+   - Subscription - select an existing subscription
+   - Resource Group - select an existing resource group or create a new one
+   - App Service Plan - select an app service plan, or create a new one. A service plan is basically the container that holds your app, with settings that determine the location, costs and resources associated with it.
+   
+5. Click **Create**.
+Your new web app is pinned to the Startboard, and will take a few minutes to be created.
 
+Once created, the web app blade opens and you get a notification that your deployment succeeded!
+
+   ![Alt text; do not leave blank. Collector car in racing red.][5]
+
+Clicking Browse at the top of the blade opens our web app with a default page displayed.
   	![Alt text; do not leave blank][6]
 
+## Step 2 : Uploading your Code
 
-Suspendisse volutpat mi id purus ultrices iaculis nec non neque. Nullam dictum dolor at aliquam pharetra. Vivamus ac hendrerit mauris. Otrus informatus: [Link 1 to another azure.microsoft.com documentation topic](virtual-machines-windows-tutorial.md)
+Great! You’ve got your new Azure web app up and running. Now, it’s time to upload some code into the container.
 
-## Heading (H2)
+To do this we’re going to access the web app’s Kudo. Kudo is a diagnostic console that exposes Azure behind-the-scenes processes and is useful for capturing a memory dump, looking at deployment logs, viewing configuration parameters and much more.
 
-Ut eu pretium lacus. Nullam purus est, iaculis sed est vel, euismod vehicula odio.
+1. Access your web app’s Kudo by adding 'scm' to your web app's URL as follows:
+*http://<webappname>.scm.asurewebsites.net*
 
-1. Curabitur lacinia, erat tristique iaculis rutrum, erat sem sodales nisi, eu condimentum turpis nisi a purus.
-
-        - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:
-        (NSDictionary *)launchOptions
-        {
-            // Register for remote notifications
-            [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
-            UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound];
-            return YES;
-        }
 
 2. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.
 
