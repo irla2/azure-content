@@ -26,8 +26,6 @@ To follow the steps outline here, all you need is a Microsoft Azure account, som
 
 Let’s get this show on the road!
 
-  ![Web App blade][1]
-
 ## Step 1 : Creating an Azure Web App
 
 Your first step is to create a new web app on Azure. An Azure web app is basically a container that holds all your application code and configurations on the cloud.
@@ -36,7 +34,7 @@ Your first step is to create a new web app on Azure. An Azure web app is basical
 2. In the top-left corner if the portal, click the New button.
 3. In the Create blade, select Web + Mobile, and then Web App.
 
-  	![Alt text; do not leave blank. Collector car in racing red.][5]
+  	![Web App blade][1]
 
 4. In the Web App blade, configure your web app settings:
    - URL - enter the URL of your website
@@ -49,11 +47,11 @@ Your new web app is pinned to the Startboard, and will take a few minutes to be 
 
 Once created, the web app blade opens and you get a notification that your deployment succeeded!
 
-   ![Alt text; do not leave blank. Collector car in racing red.][5]
+   ![New Web App created][2]
 
 Clicking Browse at the top of the blade opens our web app with a default page displayed.
 
-  	![Alt text; do not leave blank][6]
+  	![Alt text; do not leave blank][3]
 
 ## Step 2 : Uploading your Code
 
@@ -65,7 +63,7 @@ To do this we’re going to access the web app’s Kudo. Kudo is a diagnostic co
 *http://<webappname>.scm.asurewebsites.net*
 2. In the Kudo console, go to **Debug console | CMD**.
 
-   ![Alt text; do not leave blank][6]
+   ![Alt text; do not leave blank][4]
 
 3. Browse to **site | wwwroot**.
 4. Drag and drop a .zip file containing your code onto the right side of the screen above the CMD window.
@@ -76,7 +74,7 @@ To do this we’re going to access the web app’s Kudo. Kudo is a diagnostic co
 6. Open your app in a browser. Make sure to enter the correct path to the opening app file.
 **Example:** *https://danieldemo.azurewebsites.net/zf2skeleton/public/*
 
-   ![Alt text; do not leave blank][6]
+   ![Alt text; do not leave blank][5]
    
 ## Step 3 : Enabling Z-Ray
 Cool, you’ve got your code running on Azure. Now, how do we get Z-Ray working?
@@ -84,7 +82,7 @@ Cool, you’ve got your code running on Azure. Now, how do we get Z-Ray working?
 1. Open your web app blade.
 2. Open the Tools menu. To do this, click the Tools icon at the top of the blade.
 
-   ![Alt text; do not leave blank. Example of a Channel 9 video.][7]
+   ![Alt text; do not leave blank. Example of a Channel 9 video.][6]
 
 3. In the Develop section, select **Zend Z-Ray**, and then **Enable Z-Ray for Azure**.
 
@@ -96,7 +94,7 @@ After a short while you'll get a notification informing you that Z-Ray was succe
 
 Well done! To start working with Z-Ray, simply refresh your web app in the browser. Z-Ray is displayed at the bottom of the page with all the info you need on your app right in front of you.
 
-   ![Alt text; do not leave blank. Example of a Channel 9 video.][7]
+   ![Alt text; do not leave blank. Example of a Channel 9 video.][8]
 
 ##Summary
 So, in just a few minutes, we created a new Azure web app, uploaded our code, and began using Z-Ray.
@@ -112,11 +110,10 @@ If you'd like to extend Z-Ray to show info on your app, visit the extension API 
 
 <!--Image references-->
 [1]: http://devzone.zend.com/wp-content/uploads/2015/06/web_app_blade.jpg
-[6]: ./media/markdown-template-for-new-articles/pretty49.png
-[7]: ./media/markdown-template-for-new-articles/channel-9.png
-[8]: ./media/markdown-template-for-new-articles/copytemplate.png
-
-<!--Reference style links - using these makes the source content way more readable than using inline links-->
-[gog]: http://google.com/        
-[yah]: http://search.yahoo.com/  
-[msn]: http://search.msn.com/    
+[2]: http://devzone.zend.com/wp-content/uploads/2015/08/webappcreated.jpg
+[3]: http://devzone.zend.com/wp-content/uploads/2015/06/new_web_app3.jpg
+[4]: http://devzone.zend.com/wp-content/uploads/2015/06/kudo1.jpg
+[5]: http://devzone.zend.com/wp-content/uploads/2015/06/kudo2.jpg
+[6]: http://devzone.zend.com/wp-content/uploads/2015/06/code_uploaded2.jpg
+[7]: http://devzone.zend.com/wp-content/uploads/2015/08/tools_icon1.jpg
+[8]: http://devzone.zend.com/wp-content/uploads/2015/08/pricing_tiers.jpg
