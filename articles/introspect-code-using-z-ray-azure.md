@@ -44,7 +44,7 @@ Your first step is to create a new web app on Azure. An Azure web app is basical
    
 5. Click **Create**. Your new web app is pinned to the Startboard, and will take a few minutes to be created. 
 
-Once created, the web app blade opens and you get a notification that your deployment succeeded!
+   Once created, the web app blade opens and you get a notification that your deployment succeeded!
 
    ![New Web App created][2]
 
@@ -95,7 +95,7 @@ Cool, you’ve got your code running on Azure. Now, how do we get Z-Ray working?
 5. Last but not least, review the licensing info, and click **Purchase**.
 After a short while you'll get a notification informing you that Z-Ray was successfully enabled. This means that Z-Ray is now enabled for your web app!
 
-Well done! To start working with Z-Ray, simply refresh your web app in the browser. Z-Ray is displayed at the bottom of the page with all the info you need on your app right in front of you.
+   Well done! To start working with Z-Ray, simply refresh your web app in the browser. Z-Ray is displayed at the bottom of the page with all the info you need on your app right in front of you.
 
    ![Z-Ray displayed on the uploaded application][10]
 
